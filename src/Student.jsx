@@ -4,8 +4,8 @@ const Student = (props) => {
     console.log(props.student)
     return ( 
         <>
-        <h1>{props.student.name}</h1>
-        <h2>{props.student.bio}</h2>
+        <h1 id="student-name">{props.student.name}</h1>
+        <h5 id="student-bio">{props.student.bio}</h5>
         <Score scores={props.student.scores}/>
         </>
      );

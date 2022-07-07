@@ -3,14 +3,11 @@ import Student from "./Student";
 const Score = (props) => {
     return ( 
         <>
-        <div>
-            {props.scores.map(score =>
+                {props.scores.map(score =>
         <>
-        <h5>Scores: {score.score}</h5>
-        <h5>Dates: {score.date}</h5>
+            <h5 className="scores">Score: {score.score}, Date: {score.date}</h5>
         </>    
-        )}
-        </div>
+            )}
         </>
      );
 }
